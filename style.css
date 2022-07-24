@@ -11,7 +11,6 @@ body {
   grid-template-columns: 1fr;
   grid-template-rows: auto auto 1fr auto auto auto;
   min-height: 100vh;
-  grid-gap: 20px;
   grid-template-areas:
     "header"
     "nav"
@@ -42,6 +41,14 @@ footer {
   margin: 30px 40% 30px 30px;
 }
 
+.main {
+  background-image: linear-gradient(
+    to right,
+    #140b0f8a,
+    rgba(75, 75, 74, 0.945)
+  );
+}
+
 /*header */
 
 header {
@@ -63,6 +70,18 @@ header {
 .logo {
   float: left;
   padding-top: 10px;
+  animation-duration: 2s;
+  animation-name: aparecer;
+  animation-iteration-count: infinite;
+}
+
+@keyframes aparecer {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 10;
+  }
 }
 
 .logo p a {
@@ -136,8 +155,8 @@ header .textos-header {
   font-size: 1rem;
   padding: 20px;
   text-align: justify;
-  color: goldenrod;
-  background-color: #952f57;
+  color: rgb(8, 7, 5);
+  background-image: linear-gradient(to bottom, rgb(151, 149, 151), pink);
 }
 
 @media (min-width: 480px) {
@@ -189,7 +208,7 @@ header .textos-header {
 
 /*footer*/
 footer {
-  background-color: #952f57;
+  background-image: linear-gradient(to bottom, rgb(151, 149, 151), pink);
   padding: 1rem 0;
   text-align: center;
   margin-top: 100px;
@@ -315,6 +334,14 @@ header .headerArea {
   background-size: cover;
   background-attachment: fixed;
   position: relative;
+}
+
+.menu__contacto {
+  background-image: linear-gradient(
+    to right,
+    #140b0f8a,
+    rgba(75, 75, 74, 0.945)
+  );
 }
 
 fieldset {
