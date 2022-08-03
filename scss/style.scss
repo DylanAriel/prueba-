@@ -138,13 +138,12 @@ main {
   .contenedor-sobre-nosotros {
     display: flex;
     justify-content: space-evenly;
+    .imagen-about-us {
+      width: 350px;
+      height: 500px;
+      margin: 10px;
+    }
   }
-}
-
-.imagen-about-us {
-  width: 100px;
-  height: 150px;
-  margin: 10px;
 }
 
 .text {
@@ -181,7 +180,7 @@ main {
   }
 
   .nav__link {
-    font-size: 15px;
+    font-size: 10px;
   }
 
   .contenido-textos {
@@ -239,10 +238,10 @@ header .headerArea {
   grid-template-columns: repeat(2, 1fr);
   grid-column-gap: 10px;
   grid-row-gap: 15px;
-}
 
-.areasPracticas h2 {
-  color: goldenrod;
+  h2 {
+    color: goldenrod;
+  }
 }
 
 /*preguntas frecuentes*/
@@ -270,16 +269,16 @@ header .headerArea {
   padding: 15px;
   margin: 20px;
   text-align: center;
-}
 
-.questionsB p {
-  margin: 30px 0 30px 0;
-  border-bottom: solid 1px black;
-  padding: 10px;
-}
+  h3 {
+    color: goldenrod;
+  }
 
-.questions .questionsB h3 {
-  color: goldenrod;
+  .questionsB p {
+    margin: 30px 0 30px 0;
+    border-bottom: solid 1px black;
+    padding: 10px;
+  }
 }
 
 /* nosotros*/
