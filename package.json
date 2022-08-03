@@ -1,0 +1,20 @@
+{
+  "name": "dap-estudio-juridico-altamiranda-",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass --watch scss/style.scss css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DylanAriel/DAP-estudio-juridico-Altamiranda-.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DylanAriel/DAP-estudio-juridico-Altamiranda-/issues"
+  },
+  "homepage": "https://github.com/DylanAriel/DAP-estudio-juridico-Altamiranda-#readme"
+}

@@ -1,10 +1,8 @@
-* {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
-  font-family: "Lato", sans-serif;
-  overflow-x: hidden;
-}
+@import "globals";
+@import "variables";
+@import "index";
+@import "navbar";
+@import "footer";
 
 body {
   display: grid;
@@ -57,22 +55,74 @@ header {
   background: #bdc3c7;
   /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #2c3e50af, #bdc3c7a6),
-    url(./imagenes/imagen9.png);
+    url(../imagenes/imagen9.png);
   /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #2c3e50af, #bdc3c7a6),
-    url(./imagenes/imagen9.png);
+    url(../imagenes/imagen9.png);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background-size: cover;
   background-attachment: fixed;
   position: relative;
-}
 
-.logo {
-  float: left;
-  padding-top: 10px;
-  animation-duration: 2s;
-  animation-name: aparecer;
-  animation-iteration-count: infinite;
+  .logo {
+    float: left;
+    padding-top: 10px;
+    animation-duration: 2s;
+    animation-name: aparecer;
+    animation-iteration-count: infinite;
+    p a {
+      font-size: 2rem;
+      text-decoration: none;
+    }
+  }
+
+  nav {
+    .nav__list {
+      list-style: none;
+      padding: 25px;
+      justify-content: center;
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      text-decoration: none;
+      li {
+        .nav__link {
+          text-decoration: none;
+          color: goldenrod;
+          text-transform: uppercase;
+          font-weight: bold;
+          text-decoration: none;
+          letter-spacing: 1px;
+          font-size: 15px;
+          margin: 0 20px 0 20px;
+        }
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  .textos-header {
+    display: flex;
+    margin-top: 80px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+
+    h1 {
+      font-size: 2rem;
+      color: goldenrod;
+      flex-wrap: wrap;
+      padding-top: 5px;
+    }
+
+    h2 {
+      font-size: 1rem;
+      color: goldenrod;
+    }
+  }
 }
 
 @keyframes aparecer {
@@ -84,62 +134,11 @@ header {
   }
 }
 
-.logo p a {
-  color: goldenrod;
-  font-size: 2rem;
-  text-decoration: none;
-}
-
-.nav__list {
-  list-style: none;
-  padding: 25px;
-  justify-content: center;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  text-decoration: none;
-}
-
-.nav__link {
-  text-decoration: none;
-  color: goldenrod;
-  text-transform: uppercase;
-  font-weight: bold;
-  text-decoration: none;
-  letter-spacing: 1px;
-  font-size: 10px;
-  margin: 0 20px 0 20px;
-}
-
-a:hover {
-  text-decoration: underline;
-  color: black;
-}
-
-header .textos-header {
-  display: flex;
-  margin-top: 80px;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
-}
-
-.textos-header h1 {
-  font-size: 2rem;
-  color: goldenrod;
-  flex-wrap: wrap;
-  padding-top: 5px;
-}
-
-.textos-header h2 {
-  font-size: 1rem;
-  color: goldenrod;
-}
-
-.contenedor-sobre-nosotros {
-  display: flex;
-  justify-content: space-evenly;
+main {
+  .contenedor-sobre-nosotros {
+    display: flex;
+    justify-content: space-evenly;
+  }
 }
 
 .imagen-about-us {
@@ -157,6 +156,22 @@ header .textos-header {
   text-align: justify;
   color: rgb(8, 7, 5);
   background-image: linear-gradient(to bottom, rgb(151, 149, 151), pink);
+}
+.contenido-textos {
+  h3 {
+    font-size: 1rem;
+    padding: 0 0 5px 5px;
+    span {
+      background: goldenrod;
+      color: white;
+      border-radius: 60%;
+      display: inline-block;
+      text-align: center;
+      width: 20px;
+      height: 20px;
+      box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
+    }
+  }
 }
 
 @media (min-width: 480px) {
@@ -188,22 +203,6 @@ header .textos-header {
   .text-us {
     font-size: 20px;
   }
-}
-
-.contenido-textos h3 {
-  font-size: 1rem;
-  padding: 0 0 5px 5px;
-}
-
-.contenido-textos h3 span {
-  background: goldenrod;
-  color: white;
-  border-radius: 60%;
-  display: inline-block;
-  text-align: center;
-  width: 20px;
-  height: 20px;
-  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
 }
 
 /*footer*/
