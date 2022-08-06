@@ -144,31 +144,32 @@ main {
       margin: 10px;
     }
   }
-}
 
-.text {
-  width: 70%;
-  margin: 0 20px 20px 20px;
-  flex-wrap: wrap;
-  font-size: 1rem;
-  padding: 20px;
-  text-align: justify;
-  color: rgb(8, 7, 5);
-  background-image: linear-gradient(to bottom, rgb(151, 149, 151), pink);
-}
-.contenido-textos {
-  h3 {
+  .text {
+    width: 70%;
+    margin: 0 20px 20px 20px;
+    flex-wrap: wrap;
     font-size: 1rem;
-    padding: 0 0 5px 5px;
-    span {
-      background: goldenrod;
-      color: white;
-      border-radius: 60%;
-      display: inline-block;
-      text-align: center;
-      width: 20px;
-      height: 20px;
-      box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    text-align: justify;
+    color: rgb(8, 7, 5);
+    background-image: linear-gradient(to bottom, rgb(151, 149, 151), pink);
+
+    .contenido-textos {
+      h3 {
+        font-size: 1rem;
+        padding: 0 0 5px 5px;
+        span {
+          background: goldenrod;
+          color: white;
+          border-radius: 60%;
+          display: inline-block;
+          text-align: center;
+          width: 20px;
+          height: 20px;
+          box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
+        }
+      }
     }
   }
 }
@@ -221,10 +222,10 @@ header .headerArea {
   background: #bdc3c7;
   /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #2c3e50af, #bdc3c7a6),
-    url(./imagenes/headerArea.png);
+    url(../imagenes/headerArea.png);
   /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #2c3e50af, #bdc3c7a6),
-    url(./imagenes/headerArea.png);
+    url(../imagenes/headerArea.png);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background-size: cover;
   background-attachment: fixed;
@@ -238,9 +239,23 @@ header .headerArea {
   grid-template-columns: repeat(2, 1fr);
   grid-column-gap: 10px;
   grid-row-gap: 15px;
+  animation-duration: 3s;
+  animation-name: slidein;
 
   h2 {
     color: goldenrod;
+  }
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
   }
 }
 
@@ -254,10 +269,10 @@ header .headerArea {
   background: #bdc3c7;
   /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #2c3e50af, #bdc3c7a6),
-    url(./imagenes/arrow.png);
+    url(../imagenes/arrow.png);
   /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #2c3e50af, #bdc3c7a6),
-    url(./imagenes/arrow.png);
+    url(../imagenes/arrow.png);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background-size: 1000px;
   background-attachment: fixed;
@@ -270,14 +285,15 @@ header .headerArea {
   margin: 20px;
   text-align: center;
 
-  h3 {
-    color: goldenrod;
-  }
-
-  .questionsB p {
-    margin: 30px 0 30px 0;
-    border-bottom: solid 1px black;
-    padding: 10px;
+  .questionsB {
+    p {
+      margin: 30px 0 30px 0;
+      border-bottom: solid 1px black;
+      padding: 10px;
+    }
+    h3 {
+      color: goldenrod;
+    }
   }
 }
 
@@ -289,10 +305,10 @@ header .headerArea {
   background: #bdc3c7;
   /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #2c3e50af, #bdc3c7a6),
-    url(./imagenes/formal.png);
+    url(../imagenes/formal.png);
   /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #2c3e50af, #bdc3c7a6),
-    url(./imagenes/formal.png);
+    url(../imagenes/formal.png);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background-size: cover;
   background-attachment: fixed;
@@ -305,15 +321,15 @@ header .headerArea {
   /* height: 90vh; */
   padding: 15px;
   text-align: center;
-}
 
-.profile h1 {
-  color: goldenrod;
-  margin-bottom: 20px;
-}
+  .text-us {
+    padding: 20px 20px 30px 15px;
 
-.text-us {
-  padding: 20px 20px 30px 15px;
+    h1 {
+      color: goldenrod;
+      margin-bottom: 20px;
+    }
+  }
 }
 
 /*contacto*/
@@ -324,10 +340,10 @@ header .headerArea {
   background: #bdc3c7;
   /* fallback for old browsers */
   background: -webkit-linear-gradient(to right, #2c3e50af, #bdc3c7a6),
-    url(./imagenes/phone1.png);
+    url(../imagenes/phone1.png);
   /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to right, #2c3e50af, #bdc3c7a6),
-    url(./imagenes/phone1.png);
+    url(../imagenes/phone1.png);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background-size: cover;
   background-attachment: fixed;
@@ -340,17 +356,16 @@ header .headerArea {
     #140b0f8a,
     rgba(75, 75, 74, 0.945)
   );
-}
+  .text {
+    margin: 50px;
 
-fieldset {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  padding: 30px;
-}
-
-.text {
-  margin: 50px;
+    fieldset {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      padding: 30px;
+    }
+  }
 }
 
 .iframe {
