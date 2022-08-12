@@ -247,6 +247,12 @@ header .headerArea {
   }
 }
 
+.working {
+  display: block;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
 @keyframes slidein {
   from {
     margin-left: 100%;
@@ -297,6 +303,12 @@ header .headerArea {
   }
 }
 
+.pregunta {
+  display: block;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
 /* nosotros*/
 
 .header2 {
@@ -331,6 +343,11 @@ header .headerArea {
     }
   }
 }
+.imageNosotros {
+  display: block;
+  text-align: center;
+  padding-bottom: 50px;
+}
 
 /*contacto*/
 
@@ -360,10 +377,10 @@ header .headerArea {
     margin: 50px;
 
     fieldset {
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: column;
-      padding: 30px;
+      box-sizing: content-box;
+      height: 400px;
+      width: 800px;
+      padding: 80px;
     }
   }
 }
@@ -371,4 +388,5 @@ header .headerArea {
 .iframe {
   position: relative;
   text-align: center;
+  padding: 30px;
 }

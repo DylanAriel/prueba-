@@ -68,6 +68,14 @@ footer {
   width: 100vw;
 }
 
+.contenedor-footer {
+  padding: 50px;
+}
+
+.content-foo {
+  padding: 20px;
+}
+
 body {
   display: grid;
   grid-template-columns: 1fr;
@@ -274,6 +282,12 @@ header .headerArea {
   color: goldenrod;
 }
 
+.working {
+  display: block;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
 @keyframes slidein {
   from {
     margin-left: 100%;
@@ -315,6 +329,12 @@ header .headerArea {
   color: goldenrod;
 }
 
+.pregunta {
+  display: block;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
 /* nosotros*/
 .header2 {
   width: 100vw;
@@ -345,6 +365,12 @@ header .headerArea {
   margin-bottom: 20px;
 }
 
+.imageNosotros {
+  display: block;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
 /*contacto*/
 .header3 {
   width: 100%;
@@ -367,15 +393,16 @@ header .headerArea {
   margin: 50px;
 }
 .menu__contacto .text fieldset {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
-  padding: 30px;
+  box-sizing: content-box;
+  height: 400px;
+  width: 800px;
+  padding: 80px;
 }
 
 .iframe {
   position: relative;
   text-align: center;
+  padding: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */
