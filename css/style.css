@@ -278,6 +278,7 @@ header .headerArea {
   grid-row-gap: 15px;
   animation-duration: 3s;
   animation-name: slidein;
+  color: #f0e68c;
 }
 .areasPracticas h2 {
   color: goldenrod;
@@ -320,6 +321,7 @@ header .headerArea {
   padding: 15px;
   margin: 20px;
   text-align: center;
+  color: #add8e6;
 }
 .questions .questionsB p {
   margin: 30px 0 30px 0;
@@ -352,24 +354,44 @@ header .headerArea {
 }
 
 /* main*/
-.profile {
+.main .profile {
   width: 100vw;
   /* height: 90vh; */
   padding: 15px;
   text-align: center;
 }
-.profile .text-us {
+.main .profile .text-us {
   padding: 20px 20px 30px 15px;
 }
-.profile .text-us h1 {
+.main .profile .text-us h1 {
   color: goldenrod;
   margin-bottom: 20px;
 }
-
-.imageNosotros {
+.main .imageNosotros {
   display: block;
   text-align: center;
   padding-bottom: 50px;
+}
+.main .containerR {
+  text-align: center;
+  color: goldenrod;
+}
+.main .containerR .contenido-up, .main .containerR .contenido-down {
+  color: goldenrod;
+  display: flex;
+  box-sizing: border-box;
+  background-color: white;
+  width: 500px;
+  height: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 20px;
+  padding: 20px;
+  text-align: left;
+  justify-content: center;
+}
+.main .containerR .contenido-down {
+  background-color: black;
 }
 
 /*contacto*/

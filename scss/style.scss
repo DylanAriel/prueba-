@@ -241,6 +241,7 @@ header .headerArea {
   grid-row-gap: 15px;
   animation-duration: 3s;
   animation-name: slidein;
+  color: map-get($colors, color-khaki);
 
   h2 {
     color: goldenrod;
@@ -290,6 +291,7 @@ header .headerArea {
   padding: 15px;
   margin: 20px;
   text-align: center;
+  color: map-get($colors, color-lightblue);
 
   .questionsB {
     p {
@@ -328,25 +330,51 @@ header .headerArea {
 }
 
 /* main*/
-.profile {
-  width: 100vw;
-  /* height: 90vh; */
-  padding: 15px;
-  text-align: center;
+.main {
+  .profile {
+    width: 100vw;
+    /* height: 90vh; */
+    padding: 15px;
+    text-align: center;
 
-  .text-us {
-    padding: 20px 20px 30px 15px;
+    .text-us {
+      padding: 20px 20px 30px 15px;
 
-    h1 {
-      color: goldenrod;
-      margin-bottom: 20px;
+      h1 {
+        color: goldenrod;
+        margin-bottom: 20px;
+      }
     }
   }
-}
-.imageNosotros {
-  display: block;
-  text-align: center;
-  padding-bottom: 50px;
+  .imageNosotros {
+    display: block;
+    text-align: center;
+    padding-bottom: 50px;
+  }
+  .containerR {
+    text-align: center;
+    color: goldenrod;
+
+    .contenido-up {
+      color: goldenrod;
+      display: flex;
+      box-sizing: border-box;
+      background-color: white;
+      width: 500px;
+      height: 200px;
+      margin-left: auto;
+      margin-right: auto;
+      border-radius: 20px;
+      padding: 20px;
+      text-align: left;
+      justify-content: center;
+    }
+
+    .contenido-down {
+      background-color: black;
+      @extend.contenido-up;
+    }
+  }
 }
 
 /*contacto*/
