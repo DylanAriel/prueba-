@@ -1,0 +1,33 @@
+@mixin areasPracticas2($color, $display) {
+  padding: 10px;
+  margin: 10px;
+  display: $display;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 15px;
+  animation-duration: 3s;
+  animation-name: slidein;
+  color: map-get($colors, color-khaki);
+
+  h2 {
+    color: $color;
+  }
+}
+
+.working {
+  display: block;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}

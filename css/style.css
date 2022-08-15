@@ -109,7 +109,11 @@ footer {
 }
 
 .main {
-  background-image: linear-gradient(to right, rgba(20, 11, 15, 0.5411764706), rgba(75, 75, 74, 0.945));
+  background-image: linear-gradient(
+    to right,
+    rgba(20, 11, 15, 0.5411764706),
+    rgba(75, 75, 74, 0.945)
+  );
 }
 
 /*header */
@@ -118,9 +122,19 @@ header {
   height: 50vh;
   background: #bdc3c7;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, rgba(44, 62, 80, 0.6862745098), rgba(189, 195, 199, 0.6509803922)), url(../imagenes/imagen9.png);
+  background: -webkit-linear-gradient(
+      to right,
+      rgba(44, 62, 80, 0.6862745098),
+      rgba(189, 195, 199, 0.6509803922)
+    ),
+    url(../imagenes/imagen9.png);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, rgba(44, 62, 80, 0.6862745098), rgba(189, 195, 199, 0.6509803922)), url(../imagenes/imagen9.png);
+  background: linear-gradient(
+      to right,
+      rgba(44, 62, 80, 0.6862745098),
+      rgba(189, 195, 199, 0.6509803922)
+    ),
+    url(../imagenes/imagen9.png);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background-size: cover;
   background-attachment: fixed;
@@ -260,9 +274,19 @@ header .headerArea {
   height: 50vh;
   background: #bdc3c7;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, rgba(44, 62, 80, 0.6862745098), rgba(189, 195, 199, 0.6509803922)), url(../imagenes/headerArea.png);
+  background: -webkit-linear-gradient(
+      to right,
+      rgba(44, 62, 80, 0.6862745098),
+      rgba(189, 195, 199, 0.6509803922)
+    ),
+    url(../imagenes/headerArea.png);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, rgba(44, 62, 80, 0.6862745098), rgba(189, 195, 199, 0.6509803922)), url(../imagenes/headerArea.png);
+  background: linear-gradient(
+      to right,
+      rgba(44, 62, 80, 0.6862745098),
+      rgba(189, 195, 199, 0.6509803922)
+    ),
+    url(../imagenes/headerArea.png);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background-size: cover;
   background-attachment: fixed;
@@ -300,6 +324,21 @@ header .headerArea {
     width: 100%;
   }
 }
+.areasPracticas2 {
+  padding: 10px;
+  margin: 10px;
+  display: flex;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 10px;
+  grid-row-gap: 15px;
+  animation-duration: 3s;
+  animation-name: slidein;
+  color: #f0e68c;
+}
+.areasPracticas2 h2 {
+  color: blue;
+}
+
 /*preguntas frecuentes*/
 /*header*/
 .header1 {
@@ -307,9 +346,19 @@ header .headerArea {
   height: 50vh;
   background: #bdc3c7;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, rgba(44, 62, 80, 0.6862745098), rgba(189, 195, 199, 0.6509803922)), url(../imagenes/arrow.png);
+  background: -webkit-linear-gradient(
+      to right,
+      rgba(44, 62, 80, 0.6862745098),
+      rgba(189, 195, 199, 0.6509803922)
+    ),
+    url(../imagenes/arrow.png);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, rgba(44, 62, 80, 0.6862745098), rgba(189, 195, 199, 0.6509803922)), url(../imagenes/arrow.png);
+  background: linear-gradient(
+      to right,
+      rgba(44, 62, 80, 0.6862745098),
+      rgba(189, 195, 199, 0.6509803922)
+    ),
+    url(../imagenes/arrow.png);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background-size: 1000px;
   background-attachment: fixed;
@@ -344,9 +393,19 @@ header .headerArea {
   height: 50vh;
   background: #bdc3c7;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, rgba(44, 62, 80, 0.6862745098), rgba(189, 195, 199, 0.6509803922)), url(../imagenes/formal.png);
+  background: -webkit-linear-gradient(
+      to right,
+      rgba(44, 62, 80, 0.6862745098),
+      rgba(189, 195, 199, 0.6509803922)
+    ),
+    url(../imagenes/formal.png);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, rgba(44, 62, 80, 0.6862745098), rgba(189, 195, 199, 0.6509803922)), url(../imagenes/formal.png);
+  background: linear-gradient(
+      to right,
+      rgba(44, 62, 80, 0.6862745098),
+      rgba(189, 195, 199, 0.6509803922)
+    ),
+    url(../imagenes/formal.png);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background-size: cover;
   background-attachment: fixed;
@@ -376,7 +435,8 @@ header .headerArea {
   text-align: center;
   color: goldenrod;
 }
-.main .containerR .contenido-up, .main .containerR .contenido-down {
+.main .containerR .contenido-up,
+.main .containerR .contenido-down {
   color: goldenrod;
   display: flex;
   box-sizing: border-box;
@@ -400,9 +460,19 @@ header .headerArea {
   height: 50vh;
   background: #bdc3c7;
   /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, rgba(44, 62, 80, 0.6862745098), rgba(189, 195, 199, 0.6509803922)), url(../imagenes/phone1.png);
+  background: -webkit-linear-gradient(
+      to right,
+      rgba(44, 62, 80, 0.6862745098),
+      rgba(189, 195, 199, 0.6509803922)
+    ),
+    url(../imagenes/phone1.png);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, rgba(44, 62, 80, 0.6862745098), rgba(189, 195, 199, 0.6509803922)), url(../imagenes/phone1.png);
+  background: linear-gradient(
+      to right,
+      rgba(44, 62, 80, 0.6862745098),
+      rgba(189, 195, 199, 0.6509803922)
+    ),
+    url(../imagenes/phone1.png);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background-size: cover;
   background-attachment: fixed;
@@ -410,7 +480,11 @@ header .headerArea {
 }
 
 .menu__contacto {
-  background-image: linear-gradient(to right, rgba(20, 11, 15, 0.5411764706), rgba(75, 75, 74, 0.945));
+  background-image: linear-gradient(
+    to right,
+    rgba(20, 11, 15, 0.5411764706),
+    rgba(75, 75, 74, 0.945)
+  );
 }
 .menu__contacto .text {
   margin: 50px;

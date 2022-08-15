@@ -1,4 +1,5 @@
 @import "variables";
+@import "mixin";
 @import "globals";
 @import "index";
 @import "navbar";
@@ -264,6 +265,10 @@ header .headerArea {
     margin-left: 0%;
     width: 100%;
   }
+}
+
+.areasPracticas2 {
+  @include areasPracticas2(blue, flex);
 }
 
 /*preguntas frecuentes*/
