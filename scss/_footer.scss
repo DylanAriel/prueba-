@@ -1,16 +1,39 @@
 footer {
   background-image: linear-gradient(to bottom, rgb(151, 149, 151), pink);
-  padding: 1rem 0;
   text-align: center;
   margin-top: 100px;
   width: 100vw;
   color: map-get($colors, color-crimson);
+  margin-top: 0;
 }
 
-.contenedor-footer {
-  padding: 50px;
+.footer--social {
+  display: flex;
+  justify-content: center;
 }
 
-.content-foo {
-  padding: 20px;
+.footer--icons {
+  display: inline-block;
+  width: 30px;
+  height: 100px;
+  padding-top: 50px;
+}
+
+.footer--text {
+  display: inline-block;
+  width: 100px;
+  height: 200px;
+  padding-top: 50px;
+}
+
+.footer--text:hover {
+  color: black;
+}
+
+.footer--author {
+  background-color: black;
+  padding-bottom: 50px;
+}
+.footer--author:hover {
+  color: goldenrod;
 }
