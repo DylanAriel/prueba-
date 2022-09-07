@@ -25,6 +25,13 @@
       type="image/x-icon"
     />
     <title>Áreas de práctica</title>
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="../css/style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap"
@@ -34,63 +41,56 @@
   <body class="body">
     <!--header-->
     <header class="header">
-      <div class="headerArea">
-        <div class="logo">
-          <p>
-            <a href="../index.html">DAP & Asociados </a>
-          </p>
+      <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">DAP & Asociados</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a
+                  class="nav-link active"
+                  aria-current="page"
+                  href="/index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/pages/areas_practicas.html"
+                  >Áreas de Práctica</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/pages/contacto.html">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/pages/nosotros.html">Nosotros</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/pages/preguntas_frecuentes.html"
+                  >Preguntas Frecuentes</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
-        <nav class="nav">
-          <ul class="nav__list">
-            <li>
-              <a
-                class="nav__link"
-                href="../index.html"
-                title="acceso directo a inicio"
-                >inicio</a
-              >
-            </li>
-            <li>
-              <a
-                class="nav__link"
-                href="areas_practicas.html"
-                title="acceso directo a Áreas de Práctica"
-                >Áreas de práctica</a
-              >
-            </li>
-            <li>
-              <a
-                class="nav__link"
-                href="preguntas_frecuentes.html"
-                title="acceso directo a Preguntas Frecuentes"
-                >preguntas frecuentes</a
-              >
-            </li>
-            <li>
-              <a
-                class="nav__link"
-                href="nosotros.html"
-                title="acceso directo a Nosotros"
-                >nosotros</a
-              >
-            </li>
-            <li>
-              <a
-                class="nav__link"
-                href="contacto.html"
-                title="acceso directo a Contacto"
-                >contacto</a
-              >
-            </li>
-          </ul>
-        </nav>
-        <section class="textos-header">
-          <h1>Áreas de Practica</h1>
-        </section>
-      </div>
+      </nav>
     </header>
     <!--fin del header-->
     <main class="main">
+      <div class="img-working border text-center">
+        <img src="../imagenes/working.png" class="img-fluid" alt="..." />
+      </div>
       <section class="areasPracticas">
         <div>
           <th>
@@ -192,12 +192,7 @@
           </th>
         </div>
       </section>
-      <div class="working">
-        <img
-          src="../imagenes/working.png"
-          alt="dos personas sentadas hablando"
-        />
-      </div>
+
       <div class="areasPracticas2">
         <div>
           <h2>Derecho Corporativo</h2>
@@ -286,5 +281,11 @@
         <h2>&copy;DylanADesign | Altamiranda Prieto</h2>
       </div>
     </footer>
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
